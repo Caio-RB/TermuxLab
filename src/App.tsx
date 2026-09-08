@@ -1,9 +1,12 @@
+import { AppRouter } from "./routes/routes";
 import './App.css'
 
 function App() {
  return (
     <>
-	<h1> Hello World </h1>     
+		<main>
+			<AppRouter> </AppRouter>
+		</main>
     </>
   )
 }
