@@ -1,0 +1,26 @@
+@use '../../components/Variables/variables';
+
+.hero{
+    max-width: 1440px;
+    margin: 0 auto;
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__box{
+            width: 800px;
+            margin: 0 auto;
+            margin-left: 50px;
+            h2{
+                font-family: variables.$fonteHero;
+                font-size: 65px;
+                letter-spacing: 4px;
+            }
+        }
+        &__image{
+            img{
+                width: 800px;
+            }
+        }
+    }
+}
