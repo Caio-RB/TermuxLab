@@ -1,0 +1,40 @@
+@use '../Variables/variables';
+
+header{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__brand{
+            img{
+                width: 80px;
+                display: inline;
+            }
+            h1{
+                font-family: variables.$fonteBrand;
+                display: inline;
+            }
+            span.lab{
+                color: variables.$corLab;
+            }
+        }
+        &__menu{
+            &__list{
+                list-style: none;
+                &__item{
+                    float: left;
+                    a {
+                        color: #333;
+                        text-decoration: none;
+                        padding: 14px 16px;
+                        display: block; 
+                    }
+                    
+                }
+            }
+        }
+    }
+}
