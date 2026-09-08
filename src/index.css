@@ -1,1 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@font-face {
+    font-family: variables.$fontePrincipal;
+    src: url('./assets/fonts/ProductSans-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fonteBrand;
+    src: url('./assets/fonts/Audiowide-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fonteHero;
+    src: url('./assets/fonts/Volkhov-Regular.ttf') format('truetype');
+}

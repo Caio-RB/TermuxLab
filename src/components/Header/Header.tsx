@@ -16,11 +16,11 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
 
             <div className="container">
 
-                <div className="container__brand">
+                <div className="container__brand flex items-end gap-2">
 
-                    <img src={logo} alt="Logo" />
+                    <img src={logo} alt="Logo" className="w-10"/>
 
-                    <h1>
+                    <h1 className="text-4xl font-bold py-2">
                         Termux<span className="lab">Lab</span>
                     </h1>
 

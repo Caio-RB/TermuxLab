@@ -1,6 +1,6 @@
-    import './StylesDark.scss'
-   import { MdOutlineWbSunny } from "react-icons/md";
-   import { GoMoon } from "react-icons/go";
+import './StylesDark.scss'
+import { MdOutlineWbSunny } from "react-icons/md";
+import { GoMoon } from "react-icons/go";
 
     interface DarkModeProps {
         darkMode: boolean;
@@ -12,7 +12,7 @@
         return (
             <div>
                 <button onClick={() => setDarkMode(!darkMode)}>
-                {darkMode ? <MdOutlineWbSunny /> : <GoMoon />}
+                {darkMode ? '☀️' : '🌙'}
                 </button>
             </div>
         );

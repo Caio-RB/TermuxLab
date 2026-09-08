@@ -12,7 +12,7 @@ function Hero({ darkMode }: HeroProps) {
         <div className="hero">
             <div className="hero__container">
                 <div className="hero__container__box">
-                    <h2>Domine o <br />Termux. <br />Explore o poder <br />do Linux no Android.</h2>
+                    <h2 className="font-volkhov">Domine o <br />Termux. <br />Explore o poder <br />do Linux no Android.</h2>
                 </div>
                 <div className="hero__container__image">
                     <img
