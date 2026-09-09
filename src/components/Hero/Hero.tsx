@@ -1,5 +1,5 @@
-import heroLight from '../../images/termuxlab-hero02.png';
-import heroDark from '../../images/hero_transparente.png';
+import heroLight from '../../images/hero_01.png';
+import heroDark from '../../images/hero_02.png';
 import './styleHero.scss'
 
 interface HeroProps {
@@ -15,7 +15,7 @@ function Hero({ darkMode, menuOpen }: HeroProps) {
 
         <div className={`hero__container ${menuOpen ? 'padd-open' : ''}`}>
                 <div className="hero__container__box">
-                    <h2>Tecnologia<br /> ao alcance de<br /> <span className="lab">todos</span></h2>
+                    <h2>Tecnologia<br /> ao alcance <br /> de <span className="lab">todos</span></h2>
                     <p>
                         Termux Lab é uma iniciativa de inclusão
                         digital, criada para levar conhecimneto
