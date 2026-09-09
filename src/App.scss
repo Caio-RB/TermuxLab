@@ -1,0 +1,39 @@
+@use './components/Variables/variables';
+#root {
+    padding-top: 0;
+}
+.app {
+    
+
+    background-color: #f4f7fd;
+    color: #222222;
+
+    transition: 0.3s;
+}
+
+.app.dark {
+    background-color: #121212;
+    color: #ffffff;
+    h2{
+        color: #ffffff;
+    }
+    a{
+        color: #ffffff;
+    }
+    .container__hamburger span {
+        background-color: #fff;
+    }
+    .container__menu.active{
+        background-color: #121212;
+        color: #fff;
+    }
+}
+
+@font-face {
+    font-family: variables.$fonteHero;
+    src: url('./assets/fonts/poppins.extrabold.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fonteBrand;
+    src: url('./assets/fonts/Audiowide-Regular.ttf') format('truetype');
+}

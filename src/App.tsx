@@ -1,32 +1,32 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { AppRouter } from "./routes/routes";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
 
-import "./main.scss";
-import "./App.css";
-import "./styles.scss";
-
+import './App.scss';
 
 function App() {
 
     const [darkMode, setDarkMode] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className={darkMode ? "app dark" : "app"}>
+        <div className={darkMode ? 'app dark' : 'app'}>
 
             <Header
                 darkMode={darkMode}
                 setDarkMode={setDarkMode}
+                menuOpen={menuOpen}
+                setMenuOpen={setMenuOpen}
             />
-            <Hero darkMode={darkMode} />
-            <main>
-                <AppRouter />
-            </main>
+
+            <Hero
+                darkMode={darkMode}
+                menuOpen={menuOpen}
+            />
 
         </div>
     );
 }
 
-export default App; 
+export default App;

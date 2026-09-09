@@ -1,15 +1,26 @@
 import './Header.scss';
-
 import logo from '../../images/logo-transparente01.png';
 
 import DarkMode from '../Dark/DarkMode';
 
-interface HeaderProps {
-    darkMode: boolean;
-    setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-}
 
-const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
+
+interface HeaderProps {
+
+    darkMode: boolean;
+
+    setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+
+    menuOpen: boolean;
+
+    setMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Header = ({
+    darkMode,
+    setDarkMode,
+    menuOpen,
+    setMenuOpen
+}: HeaderProps) => {
 
     return (
         <header>
@@ -26,7 +37,17 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
 
                 </div>
 
-                <div className="container__menu">
+                            <div
+                                className="container__hamburger"
+                                onClick={() => setMenuOpen(prev => !prev)}
+                            >
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+
+                <div className={`container__menu ${menuOpen ? 'active' : ''}`}>
 
                     <ul className="container__menu__list">
 
@@ -48,11 +69,11 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
 
                         <li className="container__menu__list__item">
                         
-                                <DarkMode
+                             <DarkMode
                                     darkMode={darkMode}
                                     setDarkMode={setDarkMode}
                                 />
-
+                                
                         </li>
 
                     </ul>

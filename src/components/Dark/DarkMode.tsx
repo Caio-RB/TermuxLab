@@ -1,6 +1,4 @@
 import './StylesDark.scss'
-import { MdOutlineWbSunny } from "react-icons/md";
-import { GoMoon } from "react-icons/go";
 
     interface DarkModeProps {
         darkMode: boolean;

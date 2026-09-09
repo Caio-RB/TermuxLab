@@ -1,5 +1,5 @@
 import { Route,Routes } from "react-router-dom";
-import {ROUTER_VARIABLES} from "./router_variables.jsx";
+import { ROUTER_VARIABLES } from "./router_variables";
 import { HomeView } from "../pages/HomeView.tsx";
 import { HardwareView } from "../pages/HardwareView.tsx";
 import { TutorialsView } from "../pages/TutorialsView.tsx";

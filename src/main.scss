@@ -16,8 +16,9 @@
 }
 @font-face {
     font-family: variables.$fonteHero;
-    src: url('./assets/fonts/Volkhov-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/poppins.extrabold.ttf') format('truetype');
 }
 body{
     font-family: variables.$fontePrincipal;
+    background-color: #f4f7fd;
 }
